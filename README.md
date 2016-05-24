@@ -11,10 +11,10 @@ This cookbook requires `runit` for the Runit service configuration. It only supp
 ## Attributes
 
 * `default['gce_gcsfuse']['service']` Service provider to use to run `cloud_sql_proxy`. Defaults to `runit`
-* `default['gce_gcsfuse']['user']`  User to run the `gcsfuse` daemon as. All files on the FUSE filesystem will be presented as owned by this user. See https://github.com/GoogleCloudPlatform/gcsfuse/blob/master/docs/semantics.md#permissions-and-ownership for more information. Defaults to 'nobody'
-* `default['gce_gcsfuse']['group']` Group to run the `gcsfuse` daemon as. See above. Defaults to 'nogroup'
-* `default['gce_gcsfuse']['mountdir']` Directory to mount the FUSE filesystem on. Defaults to '/gcsfuse'
-* `default['gce_gcsfuse']['bucket']` GCS bucket to mount. This must be a bucket that your instance can access. Defaults to 'my-bucket'
+* `default['gce_gcsfuse']['user']`  User to run the `gcsfuse` daemon as. All files on the FUSE filesystem will be presented as owned by this user. See https://github.com/GoogleCloudPlatform/gcsfuse/blob/master/docs/semantics.md#permissions-and-ownership for more information. Defaults to `nobody`
+* `default['gce_gcsfuse']['group']` Group to run the `gcsfuse` daemon as. See above. Defaults to `nogroup`
+* `default['gce_gcsfuse']['mountdir']` Directory to mount the FUSE filesystem on. Defaults to `/gcsfuse`
+* `default['gce_gcsfuse']['bucket']` GCS bucket to mount. This must be a bucket that your instance can access. Defaults to `my-bucket`
 
 ## Recipes
 
