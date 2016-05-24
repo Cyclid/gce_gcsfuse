@@ -1,10 +1,11 @@
 name 'gce_gcsfuse'
 maintainer 'Kristian Van Der Vliet'
 maintainer_email 'vanders@liqwyd.com'
-license 'all_rights'
+license 'Apache v2.0'
+source_url 'https://github.com/Liqwyd/gce_gcsfuse'
 description 'Installs and configures gcsfuse'
 long_description 'Installs and configures the Google gcsfuse on a GCE instance'
-version '0.1.0'
+version '0.1.1'
 
 depends 'apt'
 depends 'runit'
