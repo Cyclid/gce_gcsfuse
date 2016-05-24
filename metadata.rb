@@ -1,0 +1,10 @@
+name 'gce_gcsfuse'
+maintainer 'Kristian Van Der Vliet'
+maintainer_email 'vanders@liqwyd.com'
+license 'all_rights'
+description 'Installs and configures gcsfuse'
+long_description 'Installs and configures the Google gcsfuse on a GCE instance'
+version '0.1.0'
+
+depends 'apt'
+depends 'runit'
