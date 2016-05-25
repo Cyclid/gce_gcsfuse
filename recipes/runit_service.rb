@@ -20,8 +20,11 @@ include_recipe 'runit'
 
 options = { user: node['gce_gcsfuse']['user'],
             group: node['gce_gcsfuse']['group'],
+            flags: '',
             mountdir: node['gce_gcsfuse']['mountdir'],
             bucket: node['gce_gcsfuse']['bucket'] }
+
+options[:flags] = '-o allow_other' if node['gce_gcsfuse']['allow_other']
 
 runit_service 'gcsfuse' do
   default_logger true

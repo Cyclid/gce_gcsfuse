@@ -34,8 +34,11 @@ end
 
 # Ensure that the mountdir exists and is owned by the user that will run
 # gcsfuse
+# Note the guard; although normally the directory resource can do this check
+# itself, it gets very confused when the FUSE filesystem is mounted
 directory node['gce_gcsfuse']['mountdir'] do
   owner node['gce_gcsfuse']['user']
   group node['gce_gcsfuse']['group']
   mode '0755'
+  not_if "mount | grep #{node['gce_gcsfuse']['mountdir']} >/dev/null"
 end

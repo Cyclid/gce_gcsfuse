@@ -5,7 +5,7 @@ license 'Apache v2.0'
 source_url 'https://github.com/Liqwyd/gce_gcsfuse'
 description 'Installs and configures gcsfuse'
 long_description 'Installs and configures the Google gcsfuse on a GCE instance'
-version '0.1.1'
+version '0.2.0'
 
 depends 'apt'
 depends 'runit'

@@ -10,3 +10,6 @@ default['gce_gcsfuse']['mountdir'] = '/gcsfuse'
 
 # The one thing we can't know: this cookbook is designed to be wrapped.
 default['gce_gcsfuse']['bucket'] = 'my-bucket'
+
+# Enable the allow_other FUSE option?
+default['gce_gcsfuse']['allow_other'] = false
