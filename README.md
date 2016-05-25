@@ -15,6 +15,7 @@ This cookbook requires `runit` for the Runit service configuration. It only supp
 * `default['gce_gcsfuse']['group']` Group to run the `gcsfuse` daemon as. See above. Defaults to `nogroup`
 * `default['gce_gcsfuse']['mountdir']` Directory to mount the FUSE filesystem on. Defaults to `/gcsfuse`
 * `default['gce_gcsfuse']['bucket']` GCS bucket to mount. This must be a bucket that your instance can access. Defaults to `my-bucket`
+* `default['gce_gcsfuse']['allow_other']` Add the `allow_other` option to the FUSE mount options. Defaults to `false`
 
 ## Recipes
 
